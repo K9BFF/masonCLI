@@ -1,6 +1,6 @@
 #licensed under the GNU GPL v3
 #github.com/masoncodes
-#v 0.0.1 Aplha
+#v 0.0.1 Alpha
 
 import os
 
