@@ -5,7 +5,9 @@
 import os
 import subprocess
 
-print("masonCLI v 0.0.1 Alpha. Type 'help' for a list of commands.")
+version = "0.0.2 (Alpha)"
+
+print("masonCLI v "+version+". Type 'help' for a list of commands.")
 
 running = True #yeah boiiii
 
