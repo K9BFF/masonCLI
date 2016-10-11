@@ -1,19 +1,25 @@
 #licensed under the GNU GPL v3
 #github.com/masoncodes
-#v 0.0.1 Alpha
+#v 0.0.2 (Alpha)
 
 import os
+import subprocess
 
 print("masonCLI v 0.0.1 Alpha. Type 'help' for a list of commands.")
 
-running = True
+running = True #yeah boiiii
+
+#!! anti-crash feature
+lastcommand = ''
 
 while (running == True):
     command = input("> ")
 
     #run last command
     if (command == "!!"):
-        command = lastcommand
+        command =lastcommand
+        if (lastcommand == ''):
+            print("Nothing has been run yet.")
 
     #equal to bash echo
     if (command == 'echo'):
@@ -23,7 +29,7 @@ while (running == True):
 
     #exits masonCLI    
     if (command == 'exit'):
-        #DO NOT ADD LASTCOMMAND HERE. there's no reason to
+        #DO NOT ADD LASTCOMMAND HERE. there's no reason to, and it would take up space
         running = False
         os._exit(0)
 
@@ -37,6 +43,7 @@ while (running == True):
         print("'info' shows license info for masonCLI.")
         print("'echo' returns input.")
         print("'math' does simple math. (add, subtract, divide, multiply, modulus)")
+        print("'rightcheck' checks for a right triangle.")
         print("!! runs the previous command.")
 
     #math
@@ -87,11 +94,6 @@ while (running == True):
                 print(mod)
         #welp thats enough math. maybe it can solve linear equations too someday
 
-    #bad easteregg        
-    if (command == 'python'):
-        lastcommand = 'python'
-        print("You're already in a Python program. Come on man!")
-
     #GNU GPL information
     if (command == 'info'):
         lastcommand = 'info'
@@ -114,3 +116,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         
         print("github.com/masoncodes")
         print("See the LICENSE file for more information.")
+
+    #right triangle checker
+    if (command == 'rightcheck'):
+        lastcommand = 'rightcheck'
+        a = float(input("a = "))
+        b = float(input("b = "))
+        c = float(input("c = "))
+        if ((a**2) + (b**2) == (c**2)):
+            print("Its a right triangle.")
+        else:
+            print("It isn't a right triangle.")
