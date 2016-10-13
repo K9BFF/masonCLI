@@ -1,11 +1,13 @@
 #licensed under the GNU GPL v3
 #github.com/masoncodes
-#v 0.0.2 (Alpha)
+#v 0.0.3 (Beta)
 
 import os
 import subprocess
+import math
+import cmath
 
-version = "0.0.2 (Alpha)"
+version = "0.0.3 (Beta)"
 
 print("masonCLI v "+version+". Type 'help' for a list of commands.")
 
@@ -16,12 +18,11 @@ lastcommand = ''
 
 while (running == True):
     command = input("> ")
-
     #run last command
     if (command == "!!"):
-        command =lastcommand
+        command = lastcommand
         if (lastcommand == ''):
-            print("Nothing has been run yet.")
+            print("No processes have been run yet.")
 
     #equal to bash echo
     if (command == 'echo'):
@@ -38,6 +39,7 @@ while (running == True):
     #help
     if (command == 'help'):
         lastcommand = 'help'
+        print("masonCLI is a math-oriented command-line interface.")
         print("\n> is a command prompt.")
         print(">> is an input prompt.")
         print("'exit' exits masonCLI.")
@@ -46,6 +48,8 @@ while (running == True):
         print("'echo' returns input.")
         print("'math' does simple math. (add, subtract, divide, multiply, modulus)")
         print("'rightcheck' checks for a right triangle.")
+        print("'quadratic' will solve for the roots of three numbers.")
+        print("'pythagorean' will find the length of the sides of a triangle.")
         print("!! runs the previous command.")
 
     #math
@@ -129,3 +133,43 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             print("Its a right triangle.")
         else:
             print("It isn't a right triangle.")
+
+    #quadratic formula
+    if (command == 'quadratic'):
+        lastcommand = 'quadratic'
+        a = float(input("A: "))
+        b = float(input("B: "))
+        c = float(input("C: "))
+        root1 = complex(-b + cmath.sqrt(b**2 - (4 * a * c) / 2 * a))
+        root2 = complex(-b + cmath.sqrt(b**2 - (4 * a * c) / 2 * a))
+        print("Root 1 = ",root1)
+        print("Root 2 = ",root2)
+
+    #find parts of right triangle
+    if (command == 'pythagorean'):
+        lastcommand = 'pythagorean'
+        part = input("Solve for a, b, or c? ")
+        if (part == 'a'):
+            b = float(input("B = "))
+            c = float(input("C = "))
+            bb = float(b**2)
+            cc = float(c**2)
+            pre = cc-bb
+            ans = math.sqrt(pre)
+            print(ans)
+        if (part == 'b'):
+            a = float(input("A = "))
+            c = float(input("C = "))
+            aa = float(a**2)
+            cc = float(c**2)
+            pre = cc-aa
+            ans = math.sqrt(pre)
+            print(ans)
+        if (part == 'c'):
+            a = float(input("A = "))
+            b = float(input("B = "))
+            aa = float(a**2)
+            bb = float(b**2)
+            pre = bb+aa
+            ans = math.sqrt(pre)
+            print(ans)
