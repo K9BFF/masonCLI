@@ -7,7 +7,7 @@ import subprocess
 import math
 import cmath
 
-version = "0.0.3 (Beta)"
+version = "0.3 (Beta)"
 
 print("masonCLI v "+version+". Type 'help' for a list of commands.")
 
