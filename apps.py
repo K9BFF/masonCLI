@@ -1,4 +1,4 @@
-#licensed under the GNU GPL v3
+#licensed under the Apache License 2.0
 #github.com/masoncodes
 
 #App code should be put here, so as not to create an error in masonCLI.

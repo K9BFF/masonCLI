@@ -1,4 +1,4 @@
-#licensed under the GNU GPL v3
+#licensed under the Apache License 2.0
 #github.com/masoncodes
 #v 1.0 (First Release)
 
@@ -76,7 +76,7 @@ while (running == True):
         if (operation == '/'):
             n1 = float(input("n1 = "))
             n2 = float(input("n2 = "))
-            #no dividing by zero. its the rules
+            #prevents dividing by zero
             if (n1 == 0):
                 print("Divide by zero error.")
             if (n2 == 0):

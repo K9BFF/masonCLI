@@ -1,4 +1,4 @@
-#licensed under the GNU GPL v3
+#licensed under the Apaceh License 2.0
 #github.com/masoncodes
 import sys
 import os
