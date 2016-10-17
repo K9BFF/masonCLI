@@ -8,11 +8,11 @@ import math
 import cmath
 import apps
 
-version = "1.0"
+version = "1.0.1"
 
 print("masonCLI v "+version+". Type 'help' for a list of commands.")
 
-running = True #yeah boiiii
+running = True #wanna hear my longest yeah boi ever?
 
 #!! anti-crash feature
 lastcommand = ''
@@ -102,8 +102,9 @@ while (running == True):
                 mod = (n1 % n2)
                 print(mod)
         #welp thats enough math. maybe it can solve linear equations too someday
+        #YEEEEEEEEEEEEEAH BOIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
-    #GNU GPL information
+    #not gpl, apache
     if (command == 'info'):
         lastcommand = 'info'
         print("A Python CLI.")
