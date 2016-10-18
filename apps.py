@@ -12,6 +12,8 @@
 #
 #if (command == 'example'):
 #   lastcommand = 'example'
-#   example()
+#   apps.example()
 
 
+def apphelp():
+    print("See the 'apps.py' file for information on apps.")

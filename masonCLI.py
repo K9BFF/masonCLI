@@ -46,6 +46,7 @@ while (running == True):
         print("'exit' exits masonCLI.")
         print("'help' shows this help.")
         print("'info' shows license info for masonCLI.")
+        print("'apphelp' shows where you can find info on apps.")
         print("'echo' returns input.")
         print("'math' does simple math. (add, subtract, divide, multiply, modulus)")
         print("'rightcheck' checks for a right triangle.")
@@ -189,7 +190,7 @@ the License.
         print(b, ", ", d,)
 
     #find distance
-    if(command == 'distance'):
+    if (command == 'distance'):
         lastcommand = 'distance'
         x1 = float(input("X1 = "))
         y1 = float(input("Y1 = "))
@@ -202,3 +203,7 @@ the License.
         e = float(b) + float(c)
         f = math.sqrt(float(e))
         print(f)
+
+    if (command == 'apphelp'):
+        lastcommand = 'apphelp'
+        apps.apphelp()
