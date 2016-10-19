@@ -1,6 +1,6 @@
 #licensed under the Apache License 2.0
 #github.com/masoncodes
-#v 1.0 (First Release)
+#v 1.0.2
 
 import os
 import subprocess
@@ -8,7 +8,7 @@ import math
 import cmath
 import apps
 
-version = "1.0.1"
+version = "1.0.2"
 
 print("masonCLI v "+version+". Type 'help' for a list of commands.")
 
@@ -56,56 +56,44 @@ while (running == True):
         print("'distance will ifind the distance between two points.")
         print("!! runs the previous command.")
 
-    #math
     if (command == 'math'):
         lastcommand = 'math'
-        print("Operation? (+, -, /, *, %)")
-        operation = input(">> ")
-        #add
-        if (operation == '+'):
-            n1 = float(input("n1 = "))
-            n2 = float(input("n2 = "))
-            add = (n1 + n2)
-            print(add)
-        #subtract      
-        if (operation == '-'):
-            n1 = float(input("n1 = "))
-            n2 = float(input("n2 = "))
-            diff = (n1 - n2)
-            print(diff)
-        #divide    
-        if (operation == '/'):
-            n1 = float(input("n1 = "))
-            n2 = float(input("n2 = "))
-            #prevents dividing by zero
+        n1 = float(input('n1 = '))
+        print("Operation? (+, -, *, /, %)")
+        op = input(">> ")
+        if (op == '+'):
+            n2 = float(input('n2 = '))
+            n3 = float(n1 + n2)
+            print(n3)
+        if (op == '-'):
+            n2 = float(input('n2 = '))
+            n3 = float(n1 - n2)
+            print(n3)
+        if (op == '*'):
+            n2 = float(input('n2 = '))
+            n3 = float(n1 * n2)
+            print(n3)
+        if (op == '/'):
+            n2 = float(input('n2 = '))
             if (n1 == 0):
-                print("Divide by zero error.")
+                print("Divide by Zero Error.")
             if (n2 == 0):
-                print("Divide by zero error.")
-            else:
-                quo = (n1 / n2)
-                print(quo)
-        #multiply    
-        if (operation == '*'):
-            n1 = float(input("n1 = "))
-            n2 = float(input("n2 = "))
-            pro = (n1 * n2)
-            print(pro)
-        #modulus
-        if (operation == '%'):
-            n1 = float(input("n1 = "))
-            n2 = float(input("n2 = "))
+                print("Divide by Zero Error.")
+            n3 = float(n1 / n2)
+            print(n3)
+        if (op == '%'):
+            n2 = float(input('n2 = '))
             if (n1 == 0):
-                print("Divide by zero error.")
+                print("Divide by Zero Error.")
             if (n2 == 0):
-                print("Divide by zero error.")
-            else:
-                mod = (n1 % n2)
-                print(mod)
-        #welp thats enough math. maybe it can solve linear equations too someday
-        #YEEEEEEEEEEEEEAH BOIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+                print("Divide by Zero Error.")
+            n3 = float(n1 % n2)
+            print(n3)
 
-    #not gpl, apache
+        #welp thats enough math. maybe it can solve linear equations too someday
+        #YEEAH BOIII
+
+    #apache
     if (command == 'info'):
         lastcommand = 'info'
         print("A Python CLI.")
