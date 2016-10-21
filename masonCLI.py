@@ -1,12 +1,12 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
-# v 1.0.2
+# v 1.0.3
 
 import math
 import cmath
 import apps
 
-version = "1.0.2"
+version = "1.0.3"
 
 print("masonCLI v " + version + ". Type 'help' for a list of commands.")
 
@@ -190,7 +190,7 @@ the License.
         e = float(b) + float(c)
         f = math.sqrt(float(e))
         print(f)
+        
     if command == 'apphelp':
         lastcommand = apphelp
         print("See 'apps.py' for more information on apps."")
-              
