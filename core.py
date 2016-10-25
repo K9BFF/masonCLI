@@ -25,6 +25,7 @@ def help():
     print("'pythagorean' will find the length of the sides of a triangle.")
     print("'midpoint' will find the midpoint of two points.")
     print("'distance will find the distance between two points.")
+    print("'trifind' will find the missing angle of a triangle.")
     print("!! runs the previous command.")
 
 
