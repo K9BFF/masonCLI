@@ -1,6 +1,6 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
-import sys
+
 import os
 import shutil
 
@@ -12,7 +12,8 @@ if not os.path.exists(direc):
     os.makedirs(direc)
     shutil.move("masonCLI.py", direc)
     shutil.move("apps.py", direc)
-    print("masonCLI has been successfully installed to:",direc+"!")
+    shutil.move("core.py", direc)
+    print("masonCLI has been successfully installed to:", direc+"!")
 else:
     print("You already installed masonCLI!")
-    os._exit(0)
+    exit(0)
