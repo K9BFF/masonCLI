@@ -1,5 +1,5 @@
-#licensed under the Apache License 2.0
-#github.com/masoncodes
+# licensed under the Apache License 2.0
+# github.com/masoncodes
 import sys
 import os
 import shutil
