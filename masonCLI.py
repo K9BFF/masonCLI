@@ -1,11 +1,11 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
-# v 1.0.3
+# v 1.1.0
 
 import core
 import apps
 
-version = "1.0.3"
+version = "1.1.0"
 
 print("masonCLI v " + version + ". Type 'help' for a list of commands.")
 
