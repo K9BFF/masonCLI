@@ -6,6 +6,7 @@
 import math
 import cmath
 
+
 def echo():
     echocom = input(">> ")
     print(echocom)
@@ -141,7 +142,7 @@ def midpoint():
     a = x1 + x2
     b = float(a) / 2
     c = y1 + y2
-    d = float(b) / 2
+    d = float(c) / 2
     print(b, ", ", d, )
 
 
@@ -154,7 +155,7 @@ def distance():
     b = a * a
     c = (float(y2) - float(y1))
     d = c * c
-    e = float(b) + float(c)
+    e = float(b) + float(d)
     f = math.sqrt(float(e))
     print(f)
 
