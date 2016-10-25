@@ -6,7 +6,7 @@ import shutil
 
 print("This installer is PROOF OF CONCEPT AND IS NOT REQUIRED TO BE RUN.")
 print("Before you begin, please ensure you have downloaded the latest version of masonCLI.")
-print("Where should masonCLI be installed? (please specify a folder for masonCLI as well.")
+print("Where should masonCLI be installed? (please specify a folder for masonCLI as well.)")
 direc = input(">> ")
 if not os.path.exists(direc):
     os.makedirs(direc)
