@@ -1,11 +1,15 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
-# v 1.1.0
+# v 1.1.1
+# for core code, see core.py
+# to add custom code in a safe way, see apps.py
+
 
 import core
 import apps
 
-version = "1.1.0"
+#version CHANGE THIS
+version = "1.1.1"
 
 print("masonCLI v " + version + ". Type 'help' for a list of commands.")
 
@@ -37,11 +41,12 @@ while running:
     # help
     if command == 'help':
         lastCommand = 'help'
-        core.help()
+        core.assist()
 
+    # math
     if command == 'math':
         lastCommand = 'math'
-        core.math()
+        core.climath()
 
     # apache
     if command == 'info':
@@ -73,11 +78,22 @@ while running:
         lastCommand = 'distance'
         core.distance()
 
-    #show apphelp
+    # show apphelp
     if command == 'apphelp':
         lastCommand = 'apphelp'
         apps.apphelp()
 
+    # triangle angle finder
     if command == 'trifind':
-        lastcommand = 'trifind'
+        lastCommand = 'trifind'
         core.trifind()
+
+    # roots
+    if command == 'root':
+        lastCommand = 'root'
+        core.root()
+
+    # factorial
+    if command == 'factorial':
+        lastCommand = 'factorial'
+        core.factorial()
