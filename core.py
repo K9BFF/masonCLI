@@ -21,7 +21,7 @@ def assist():
     print("'help' shows this help.")
     print("'info' shows license info for masonCLI.")
     print("'echo' returns input.")
-    print("'math' does simple math. (add, subtract, divide, multiply, modulus)")
+    print("'math' does simple math. (Add, subtract, divide, multiply, modulus, exponents.)")
     print("'rightcheck' checks for a right triangle.")
     print("'quadratic' will solve for the roots of three numbers.")
     print("'pythagorean' will find the length of a side on a triangle.")
