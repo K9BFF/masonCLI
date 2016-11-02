@@ -40,26 +40,28 @@ def climath():
     n2 = float(n2)
     if operator == '+':
         print(n1 + n2)
-    if operator == '-':
+    elif operator == '-':
         print(n1 - n2)
-    if operator == '*':
+    elif operator == '*':
         print(n1 * n2)
-    if operator == '/':
+    elif operator == '/':
         if n1 == 0:
             print("Divide by Zero Error.")
-        if n2 == 0:
+        elif n2 == 0:
             print("Divide by Zero Error.")
         else:
             print(n1 / n2)
-    if operator == '%':
+    elif operator == '%':
         if n1 == 0:
             print("Divide by Zero Error.")
-        if n2 == 0:
+        elif n2 == 0:
             print("Divide by Zero Error.")
         else:
             print(n1 % n2)
-    if operator == '^':
+    elif operator == '^':
         print(n1 ** n2)
+    else:
+        print(operator,"isn't an operation.")
 # welp that's enough math. maybe it can solve linear equations too someday
 
 
