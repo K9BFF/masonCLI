@@ -1,5 +1,6 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
+# masoncodes.me
 # i cannot guarantee that this program will work properly if this is file is edited.
 
 
@@ -13,8 +14,8 @@ def echo():
 
 
 def assist():
-    print("masonCLI is a math-oriented command-line interface.")
-    print("\n> is a command prompt.")
+    print("masonCLI is a math-oriented command-line interface.\n")
+    print("> is a command prompt.")
     print(">> is an input prompt.")
     print("'exit' exits masonCLI.")
     print("'help' shows this help.")
@@ -33,59 +34,50 @@ def assist():
 
 
 def climath():
-    n1 = float(input('n1 = '))
-    print("Operation? (+, -, *, /, ^, %)")
-    op = input(">> ")
-    if op == '+':
-        n2 = float(input('n2 = '))
-        n3 = float(n1 + n2)
-        print(n3)
-    if op == '-':
-        n2 = float(input('n2 = '))
-        n3 = float(n1 - n2)
-        print(n3)
-    if op == '*':
-        n2 = float(input('n2 = '))
-        n3 = float(n1 * n2)
-        print(n3)
-    if op == '/':
-        n2 = float(input('n2 = '))
+    print("Choose an operation (+, -, *, /, %, ^), and input two numbers. (ex. 1 + 1)")
+    n1, operator, n2 = input(">> ").split()
+    n1 = float(n1)
+    n2 = float(n2)
+    if operator == '+':
+        print(n1 + n2)
+    if operator == '-':
+        print(n1 - n2)
+    if operator == '*':
+        print(n1 * n2)
+    if operator == '/':
         if n1 == 0:
             print("Divide by Zero Error.")
         if n2 == 0:
             print("Divide by Zero Error.")
-        n3 = float(n1 / n2)
-        print(n3)
-    if op == '%':
-        n2 = float(input('n2 = '))
+        else:
+            print(n1 / n2)
+    if operator == '%':
         if n1 == 0:
             print("Divide by Zero Error.")
         if n2 == 0:
             print("Divide by Zero Error.")
-        n3 = float(n1 % n2)
-        print(n3)
-    if op == '^':
-        n2 = float(input('n2 = '))
-        n3 = n1 ** n2
-        print(n3)
-
-        # welp thats enough math. maybe it can solve linear equations too someday
-        # YEEAH BOIII
+        else:
+            print(n1 % n2)
+    if operator == '^':
+        print(n1 ** n2)
+# welp that's enough math. maybe it can solve linear equations too someday
 
 
 def info():
     print("A Python CLI.")
     print("Copyright 2016 masoncodes")
     print("""
-    Licensed under the Apache License, Version 2.0 (the "License"); you may
-    not use this file except in compliance with the License. You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
     http://www.apache.org/licenses/LICENSE-2.0
 
-    Unless required by applicable law or agreed to in writing, software distributed under the License
-    is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
-    or implied. See the License for the specific language governing permissions and limitations under
-    the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
     """)
 
     print("github.com/masoncodes")
@@ -175,7 +167,7 @@ def trifind():
 
 
 def root():
-    index = float(input("index = "))
+    index = float(input("Index = "))
     n1 = float(input("n1 = "))
     rooter = (1 / index)
     n2 = (n1 ** rooter)

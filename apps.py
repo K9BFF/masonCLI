@@ -1,5 +1,6 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
+# masoncodes.me
 
 # App code should be put here, so as not to create an error in masonCLI.
 # All apps should be written in python.

@@ -1,6 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
-# v 1.1.1
+# masoncodes.me
+# v 2.0
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -8,8 +9,8 @@
 import core
 import apps
 
-#version CHANGE THIS
-version = "1.1.1"
+# version CHANGE THIS
+version = "2.0"
 
 print("masonCLI v " + version + ". Type 'help' for a list of commands.")
 
@@ -21,6 +22,8 @@ lastCommand = ''
 # get it boiz
 while running:
     command = input("> ")
+    # convert to lowercase
+    command = command.lower()
     # run last command
     if command == "!!":
         command = lastCommand
