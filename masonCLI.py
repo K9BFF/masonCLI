@@ -31,72 +31,74 @@ while running:
             print("No processes have been run yet.")
 
     # equal to bash echo
-    if command == 'echo':
+    elif command == 'echo':
         lastCommand = 'echo'
         core.echo()
 
     # exits masonCLI
-    if command == 'exit':
+    elif command == 'exit':
         # DO NOT ADD LASTCOMMAND HERE. there's no reason to, and it would take up space
         running = False
         exit()
 
     # help
-    if command == 'help':
+    elif command == 'help':
         lastCommand = 'help'
         core.assist()
 
     # math
-    if command == 'math':
+    elif command == 'math':
         lastCommand = 'math'
         core.climath()
 
     # apache
-    if command == 'info':
+    elif command == 'info':
         lastCommand = 'info'
         core.info()
 
     # right triangle checker
-    if command == 'rightcheck':
+    elif command == 'rightcheck':
         lastCommand = 'rightcheck'
         core.rightcheck()
 
     # quadratic formula
-    if command == 'quadratic':
+    elif command == 'quadratic':
         lastCommand = 'quadratic'
         core.quadratic()
 
     # find parts of right triangle
-    if command == 'pythagorean':
+    elif command == 'pythagorean':
         lastCommand = 'pythagorean'
         core.pythagorean()
 
     # find midpoint
-    if command == 'midpoint':
+    elif command == 'midpoint':
         lastCommand = 'midpoint'
         core.midpoint()
 
     # find distance
-    if command == 'distance':
+    elif command == 'distance':
         lastCommand = 'distance'
         core.distance()
 
     # show apphelp
-    if command == 'apphelp':
+    elif command == 'apphelp':
         lastCommand = 'apphelp'
         apps.apphelp()
 
     # triangle angle finder
-    if command == 'trifind':
+    elif command == 'trifind':
         lastCommand = 'trifind'
         core.trifind()
 
     # roots
-    if command == 'root':
+    elif command == 'root':
         lastCommand = 'root'
         core.root()
 
     # factorial
-    if command == 'factorial':
+    elif command == 'factorial':
         lastCommand = 'factorial'
         core.factorial()
+    else:
+        print(command, "is not a valid command.")
