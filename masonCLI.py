@@ -78,9 +78,6 @@ while running:
     elif command == 'factorial':
         core.factorial()
 
-    elif command == 'prompt':
-        core.prompt()
-
     # bad command
     else:
         if command == "":
