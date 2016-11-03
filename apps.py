@@ -12,7 +12,6 @@
 # Template for addition to masonCLI:
 #
 # if (command == 'example'):
-#   lastcommand = 'example'
 #   apps.example()
 
 
