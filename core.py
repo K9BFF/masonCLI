@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# i cannot guarantee that this program will work properly if this is file is edited.
+# I cannot guarantee that this program will work properly if this is file is edited.
 
 
 import math
@@ -30,7 +30,6 @@ def assist():
     print("'trifind' will find the missing angle of a triangle.")
     print("'root' will find the x root of a number.")
     print("'factorial' will find the factorial of a number.")
-    print("!! runs the previous command.")
 
 
 def climath():
@@ -61,7 +60,7 @@ def climath():
     elif operator == '^':
         print(n1 ** n2)
     else:
-        print(operator,"isn't an operation.")
+        print("'" + operator + "' isn't an operation.")
 # welp that's enough math. maybe it can solve linear equations too someday
 
 
@@ -116,7 +115,7 @@ def pythagorean():
         pre = cc - bb
         ans = math.sqrt(pre)
         print(ans)
-    if part == 'b':
+    elif part == 'b':
         a = float(input("A = "))
         c = float(input("C = "))
         aa = float(a ** 2)
@@ -124,7 +123,7 @@ def pythagorean():
         pre = cc - aa
         ans = math.sqrt(pre)
         print(ans)
-    if part == 'c':
+    elif part == 'c':
         a = float(input("A = "))
         b = float(input("B = "))
         aa = float(a ** 2)
