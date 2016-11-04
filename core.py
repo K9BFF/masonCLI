@@ -14,9 +14,9 @@ def echo():
 
 
 def assist():
-    print("masonCLI is a math-oriented command-line interface.\n")
+    print("\nmasonCLI is a math-oriented command-line interface.")
     print("> is a command prompt.")
-    print(">> is an input prompt.")
+    print(">> is an input prompt.\n")
     print("'exit' exits masonCLI.")
     print("'help' shows this help.")
     print("'info' shows license info for masonCLI.")
@@ -30,37 +30,43 @@ def assist():
     print("'trifind' will find the missing angle of a triangle.")
     print("'root' will find the x root of a number.")
     print("'factorial' will find the factorial of a number.")
+    print("'splitwork' will solve a split-work problem.")
 
 
 def climath():
     print("Choose an operation (+, -, *, /, %, ^), and input two numbers. (ex. 1 + 1)")
     n1, operator, n2 = input(">> ").split()
-    n1 = float(n1)
-    n2 = float(n2)
-    if operator == '+':
-        print(n1 + n2)
-    elif operator == '-':
-        print(n1 - n2)
-    elif operator == '*':
-        print(n1 * n2)
-    elif operator == '/':
-        if n1 == 0:
-            print("Divide by Zero Error.")
-        elif n2 == 0:
-            print("Divide by Zero Error.")
-        else:
-            print(n1 / n2)
-    elif operator == '%':
-        if n1 == 0:
-            print("Divide by Zero Error.")
-        elif n2 == 0:
-            print("Divide by Zero Error.")
-        else:
-            print(n1 % n2)
-    elif operator == '^':
-        print(n1 ** n2)
+    if n1.isalpha():
+        print("n1 is not a numerical value.")
+    elif n2.isalpha():
+        print("n2 is not a numerical value.")
     else:
-        print("'" + operator + "' isn't an operation.")
+        n1 = float(n1)
+        n2 = float(n2)
+        if operator == '+':
+            print(n1 + n2)
+        elif operator == '-':
+            print(n1 - n2)
+        elif operator == '*':
+            print(n1 * n2)
+        elif operator == '/':
+            if n1 == 0:
+                print("Divide by Zero Error.")
+            elif n2 == 0:
+                print("Divide by Zero Error.")
+            else:
+                print(n1 / n2)
+        elif operator == '%':
+            if n1 == 0:
+                print("Divide by Zero Error.")
+            elif n2 == 0:
+                print("Divide by Zero Error.")
+            else:
+                print(n1 % n2)
+        elif operator == '^':
+            print(n1 ** n2)
+        else:
+            print("'" + operator + "' isn't an operation.")
 # welp that's enough math. maybe it can solve linear equations too someday
 
 
@@ -86,9 +92,9 @@ limitations under the License.
 
 
 def rightcheck():
-    a = float(input("a = "))
-    b = float(input("b = "))
-    c = float(input("c = "))
+    a = float(input("A = "))
+    b = float(input("B = "))
+    c = float(input("C = "))
     if (a ** 2) + (b ** 2) == (c ** 2):
         print("Its a right triangle.")
     else:
@@ -96,9 +102,9 @@ def rightcheck():
 
 
 def quadratic():
-    a = float(input("A: "))
-    b = float(input("B: "))
-    c = float(input("C: "))
+    a = float(input("A = "))
+    b = float(input("B = "))
+    c = float(input("C = "))
     root1 = complex(-b + cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
     root2 = complex(-b + cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
     print("Root 1 = ", root1)
@@ -179,3 +185,24 @@ def factorial():
     n1 = float(input("n1 = "))
     n2 = math.factorial(n1)
     print(n2)
+
+
+def splitwork():
+    print("Solve for time, or n1?")
+    solve = input(">> ")
+    if solve == 'time':
+        n1 = float(input("n1 = "))
+        n2 = float(input("n2 = "))
+        n1 = (n1 ** -1)
+        n2 = (n2 ** -1)
+        n3 = n1 + n2
+        print(n3)
+    elif solve == 'n1':
+        time = float(input("time = "))
+        n2 = float(input("n2 = "))
+        time = (time ** -1)
+        n2 = (n2 ** -1)
+        n3 = (time + n2)
+        print(n3)
+    else:
+        print("Input invalid.")
