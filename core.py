@@ -106,7 +106,7 @@ def quadratic():
     b = float(input("B = "))
     c = float(input("C = "))
     root1 = complex(-b + cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
-    root2 = complex(-b + cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
+    root2 = complex(-b - cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
     print("Root 1 = ", root1)
     print("Root 2 = ", root2)
 
