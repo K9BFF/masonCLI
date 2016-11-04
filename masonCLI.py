@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.2
+# v 2.2.1
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -16,7 +16,7 @@ print("masonCLI v " + version + ". Type 'help' for a list of commands.")
 
 running = True  # wanna hear my longest yeah boi ever?
 
-# prompt loop
+# prompt loop and commands
 while running:
     # prompt
     command = input("> ")

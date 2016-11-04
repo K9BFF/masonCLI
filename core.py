@@ -81,7 +81,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
     """)
 
-    print("github.com/masoncodes")
+    print("masoncodes.me")
     print("See the LICENSE file for more information.")
 
 
