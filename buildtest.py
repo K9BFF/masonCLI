@@ -9,8 +9,8 @@ a = 3 * 3
 b = 4 * 4
 print("3^2 =", 3*3)
 print("4^2 =", 4*4)
-a = float(a)
-b = float(b)
+a = int(a)
+b = int(b)
 print("a^2 + b^2 =", a + b)
 c = math.sqrt(a + b)
 print("The square root of", a + b, "is", c)
