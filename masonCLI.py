@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.3
+# v 2.3.1
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,7 +10,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "2.3"
+version = "2.3.1"
 
 print("masonCLI v " + version + ". Type 'help' for a list of commands.")
 
@@ -85,6 +85,6 @@ while running:
     # bad command
     else:
         if command == "":
-            print("No command was input.")
+            pass
         else:
             print("'"+command+"' is not a valid command.")
