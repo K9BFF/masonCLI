@@ -31,6 +31,7 @@ def assist():
     print("'root' will find the x root of a number.")
     print("'factorial' will find the factorial of a number.")
     print("'splitwork' will solve a split-work problem.")
+    print("'missingangle' will solve for a missing angle.")
 
 
 def climath():
@@ -92,9 +93,9 @@ limitations under the License.
 
 
 def rightcheck():
-    a = float(input("A = "))
-    b = float(input("B = "))
-    c = float(input("C = "))
+    a = float(input("a = "))
+    b = float(input("b = "))
+    c = float(input("c = "))
     if (a ** 2) + (b ** 2) == (c ** 2):
         print("Its a right triangle.")
     else:
@@ -102,9 +103,9 @@ def rightcheck():
 
 
 def quadratic():
-    a = float(input("A = "))
-    b = float(input("B = "))
-    c = float(input("C = "))
+    a = float(input("a = "))
+    b = float(input("b = "))
+    c = float(input("c = "))
     root1 = complex(-b + cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
     root2 = complex(-b - cmath.sqrt(b ** 2 - (4 * a * c) / 2 * a))
     print("Root 1 = ", root1)
@@ -114,24 +115,24 @@ def quadratic():
 def pythagorean():
     part = input("Solve for a, b, or c? ")
     if part == 'a':
-        b = float(input("B = "))
-        c = float(input("C = "))
+        b = float(input("b = "))
+        c = float(input("c = "))
         bb = float(b ** 2)
         cc = float(c ** 2)
         pre = cc - bb
         ans = math.sqrt(pre)
         print(ans)
     elif part == 'b':
-        a = float(input("A = "))
-        c = float(input("C = "))
+        a = float(input("a = "))
+        c = float(input("c = "))
         aa = float(a ** 2)
         cc = float(c ** 2)
         pre = cc - aa
         ans = math.sqrt(pre)
         print(ans)
     elif part == 'c':
-        a = float(input("A = "))
-        b = float(input("B = "))
+        a = float(input("a = "))
+        b = float(input("b = "))
         aa = float(a ** 2)
         bb = float(b ** 2)
         pre = bb + aa
@@ -140,10 +141,10 @@ def pythagorean():
 
 
 def midpoint():
-    x1 = float(input("X1 = "))
-    y1 = float(input("Y1 = "))
-    x2 = float(input("X2 = "))
-    y2 = float(input("Y2 = "))
+    x1 = float(input("x1 = "))
+    y1 = float(input("y1 = "))
+    x2 = float(input("x2 = "))
+    y2 = float(input("y2 = "))
     a = x1 + x2
     b = float(a) / 2
     c = y1 + y2
@@ -152,10 +153,10 @@ def midpoint():
 
 
 def distance():
-    x1 = float(input("X1 = "))
-    y1 = float(input("Y1 = "))
-    x2 = float(input("Y2 = "))
-    y2 = float(input("Y2 = "))
+    x1 = float(input("x1 = "))
+    y1 = float(input("y1 = "))
+    x2 = float(input("x2 = "))
+    y2 = float(input("y2 = "))
     a = (float(x2) - float(x1))
     b = a * a
     c = (float(y2) - float(y1))
@@ -206,3 +207,12 @@ def splitwork():
         print(n3)
     else:
         print("Input invalid.")
+
+
+def missingangle():
+    n1 = float(input("n1 = "))
+    n2 = float(input("n2 = "))
+    n3 = n1 + n2
+    n4 = 180 - n3
+    print(n4, "Degrees")
+

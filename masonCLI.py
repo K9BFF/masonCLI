@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.3.1
+# v 2.4
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,9 +10,9 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "2.3.1"
+version = "2.4"
 
-print("masonCLI v " + version + ". Type 'help' for a list of commands.")
+print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
 running = True  # wanna hear my longest yeah boi ever?
 
@@ -81,6 +81,10 @@ while running:
     # split-work problems
     elif command == 'splitwork':
         core.splitwork()
+
+    # find missing angle
+    elif command == 'missingangle':
+        core.missingangle()
 
     # bad command
     else:
