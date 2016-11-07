@@ -214,5 +214,8 @@ def missingangle():
     n2 = float(input("n2 = "))
     n3 = n1 + n2
     n4 = 180 - n3
-    print(n4, "Degrees")
+    if n4 > 180:
+        print("The missing angle is greater than 180 Degrees.")
+    else:
+        print(n4, "Degrees")
 
