@@ -24,7 +24,7 @@ while running:
     command = input(prompt+" ").lower()
 
     if command == "prompt":
-        np = input("Input the new prompt: ")
+        prompt = input("Input the new prompt: ")
 
     # echo
     elif command == 'echo':
