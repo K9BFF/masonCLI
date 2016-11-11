@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.4
+# v 2.5
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,19 +10,24 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "2.4"
+version = "2.5"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
 running = True  # wanna hear my longest yeah boi ever?
 
+prompt = ">"
+
 # prompt loop and commands
 while running:
     # prompt
-    command = input("> ")
+    command = input(prompt+" ").lower()
+
+    if command == "prompt":
+        np = input("Input the new prompt: ")
 
     # echo
-    if command == 'echo':
+    elif command == 'echo':
         core.echo()
 
     # exits masonCLI

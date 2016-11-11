@@ -212,10 +212,11 @@ def splitwork():
 def missingangle():
     n1 = float(input("n1 = "))
     n2 = float(input("n2 = "))
-    n3 = n1 + n2
-    n4 = 180 - n3
-    if n3 > 180:
-        print("The missing angle is greater than 180 Degrees.")
+    if n1 > 180:
+        print("Not possible.")
+    elif n2 > 180:
+        print("Not possible.")
     else:
+        n3 = n1 + n2
+        n4 = 180 - n3
         print(n4, "Degrees")
-
