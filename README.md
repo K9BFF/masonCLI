@@ -5,6 +5,7 @@ masonCLI is made for math. It is a command-line interface that does math easily 
 For licensing info, please see the 'LICENSE' file.
 
 ### REQUIREMENTS
-+ Python 3.4+
++ Python 3
++ A working computer
 
-if there are issues in my code, or in my math, please submit a pull request!
+If there are issues in my code, or in my math, please submit a pull request!
