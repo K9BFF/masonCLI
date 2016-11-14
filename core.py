@@ -21,17 +21,19 @@ def assist():
     print("'help' shows this help.")
     print("'info' shows license info for masonCLI.")
     print("'echo' returns input.")
-    print("'math' does simple math. (Add, subtract, divide, multiply, modulus, exponents.)")
+    print("'prompt' will change the prompt for the current session.")
+    print("'math' does simple math. (Add, Subtract, Divide, Multiply, Modulus, Exponents.)")
     print("'rightcheck' checks for a right triangle.")
     print("'quadratic' will solve for the roots of three numbers.")
     print("'pythagorean' will find the length of a side on a triangle.")
+    print("'tritheorem' will use the Triangle Inequality Theorem.")
     print("'midpoint' will find the midpoint of two points.")
     print("'distance will find the distance between two points.")
     print("'trifind' will find the missing angle of a triangle.")
     print("'root' will find the x root of a number.")
     print("'factorial' will find the factorial of a number.")
     print("'splitwork' will solve a split-work problem.")
-    print("'missingangle' will solve for a missing angle.")
+    print("'missingangle' will solve for a missing angle.\n")
 
 
 def climath():
@@ -86,7 +88,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-    """)
+        """)
 
     print("masoncodes.me")
     print("See the LICENSE file for more information.")
@@ -113,7 +115,8 @@ def quadratic():
 
 
 def pythagorean():
-    part = input("Solve for a, b, or c? ")
+    print("Solve for (a), (b), or (c)?")
+    part = input(">> ").lower()
     if part == 'a':
         b = float(input("b = "))
         c = float(input("c = "))
@@ -138,6 +141,8 @@ def pythagorean():
         pre = bb + aa
         ans = math.sqrt(pre)
         print(ans)
+    else:
+        print("Invalid input.")
 
 
 def midpoint():
@@ -220,3 +225,25 @@ def missingangle():
         n3 = n1 + n2
         n4 = 180 - n3
         print(n4, "Degrees")
+
+
+def triangle_ineq_theorem():
+    print("Find (triangle) or (range)?")
+    kind = input(">> ").lower()
+    if kind == 'triangle':
+        n1 = float(input("side1 = "))
+        n2 = float(input("side2 = "))
+        n3 = float(input("side3 = "))
+        n4 = (n1 + n2)
+        if n4 > n3:
+            print("It is a triangle.")
+        else:
+            print("Not a triangle.")
+    elif kind == 'range':
+        n1 = float(input("n1 = "))
+        n2 = float(input("n2 = "))
+        p1 = (n2 - n1)
+        p2 = (n2 + n1)
+        print(p1, '< x <', p2)
+    else:
+        print("Invalid input.")

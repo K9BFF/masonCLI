@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.5
+# v 2.7
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,7 +10,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "2.5"
+version = "2.7"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
@@ -24,7 +24,8 @@ while running:
     command = input(prompt+" ").lower()
 
     if command == "prompt":
-        prompt = input("Input the new prompt: ")
+        print("Input the new prompt.")
+        prompt = input(">> ")
 
     # echo
     elif command == 'echo':
@@ -90,6 +91,10 @@ while running:
     # find missing angle
     elif command == 'missingangle':
         core.missingangle()
+
+    # triangle inequality theorem
+    elif command == 'tritheorem':
+        core.triangle_ineq_theorem()
 
     # bad command
     else:
