@@ -17,23 +17,33 @@ def assist():
     print("\nmasonCLI is a math-oriented command-line interface.")
     print("> is a command prompt.")
     print(">> is an input prompt.\n")
+    print("'help -sys' shows system commands.")
+    print("'help -geom' shows geometry commands.\n")
+    print("'math' does simple math. (Add, Subtract, Divide, Multiply, Modulus, Exponents.)")
+    print("'quadratic' will solve for the roots of three numbers.")
+    print("'root' will find the x root of a number.")
+    print("'factorial' will find the factorial of a number.")
+    print("'splitwork' will solve a split-work problem.")
+    print("'order' will ask for three inputs and print them in order from least to greatest.")
+    print("'average' will find the average of an amount of numbers.\n")
+
+
+def assist_sys():
     print("'exit' exits masonCLI.")
     print("'help' shows this help.")
     print("'info' shows license info for masonCLI.")
     print("'echo' returns input.")
-    print("'prompt' will change the prompt for the current session.")
-    print("'math' does simple math. (Add, Subtract, Divide, Multiply, Modulus, Exponents.)")
+    print("'prompt' will change the prompt for the current session.\n")
+
+
+def assist_geom():
     print("'rightcheck' checks for a right triangle.")
-    print("'quadratic' will solve for the roots of three numbers.")
     print("'pythagorean' will find the length of a side on a triangle.")
     print("'tritheorem' will use the Triangle Inequality Theorem.")
-    print("'midpoint' will find the midpoint of two points.")
-    print("'distance will find the distance between two points.")
+    print("'missingangle' will solve for a missing angle.")
     print("'trifind' will find the missing angle of a triangle.")
-    print("'root' will find the x root of a number.")
-    print("'factorial' will find the factorial of a number.")
-    print("'splitwork' will solve a split-work problem.")
-    print("'missingangle' will solve for a missing angle.\n")
+    print("'midpoint' will find the midpoint of two points.")
+    print("'distance will find the distance between two points.\n")
 
 
 def climath():
@@ -76,19 +86,18 @@ def climath():
 def info():
     print("A Python CLI.")
     print("Copyright 2016 masoncodes")
-    print("""
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-        """)
+    print("\n"
+          "Licensed under the Apache License, Version 2.0 (the \"License\");\n"
+          "you may not use this file except in compliance with the License.\n"
+          "You may obtain a copy of the License at\n"
+          "\n"
+          "    http://www.apache.org/licenses/LICENSE-2.0\n"
+          "\n"
+          "Unless required by applicable law or agreed to in writing, software\n"
+          "distributed under the License is distributed on an \"AS IS\" BASIS,\n"
+          "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n"
+          "See the License for the specific language governing permissions and\n"
+          "limitations under the License.\n")
 
     print("masoncodes.me")
     print("See the LICENSE file for more information.")
@@ -247,3 +256,38 @@ def triangle_ineq_theorem():
         print(p1, '< x <', p2)
     else:
         print("Invalid input.")
+
+
+def order():
+    n1 = float(input("n1 = "))
+    n2 = float(input("n2 = "))
+    n3 = float(input("n3 = "))
+    if n1 < n2 < n3:
+        print(n1, "<", n2, "<", n3)
+    if n1 < n3 < n2:
+        print(n1, "<", n3, "<", n2)
+    if n2 < n1 < n3:
+        print(n2, "<", n1, "<", n3)
+    if n2 < n3 < n1:
+        print(n2, "<", n3, "<", n1)
+    if n3 < n1 < n2:
+        print(n3, "<", n1, "<", n2)
+    if n3 < n2 < n1:
+        print(n3, "<", n2, "<", n1)
+
+
+def average():
+    print("How many numbers?")
+    numbers = int(input(">> "))
+    if numbers == 1:
+        print("Invalid input.")
+    elif numbers == 0:
+        print("Invalid input.")
+    else:
+        for i in range(0, numbers):
+            n = int(input("n = "))
+            part1 = (n + n)
+            i += 1
+            if i == numbers:
+                part2 = part1 / numbers
+                print(part2)

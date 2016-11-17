@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.7
+# v 2.8
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,7 +10,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "2.7"
+version = "2.8"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
@@ -39,6 +39,14 @@ while running:
     # help
     elif command == 'help':
         core.assist()
+
+    # syshelp
+    elif command == 'help -sys':
+        core.assist_sys()
+
+    # geom help
+    elif command == 'help -geom':
+        core.assist_geom()
 
     # math
     elif command == 'math':
@@ -95,6 +103,13 @@ while running:
     # triangle inequality theorem
     elif command == 'tritheorem':
         core.triangle_ineq_theorem()
+
+    # print in order
+    elif command == 'order':
+        core.order()
+
+    elif command == 'average':
+        core.average()
 
     # bad command
     else:
