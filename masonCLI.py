@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 2.8
+# v 2.8-hotfix
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,7 +10,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "2.8"
+version = "2.8-hotfix"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
@@ -108,8 +108,6 @@ while running:
     elif command == 'order':
         core.order()
 
-    elif command == 'average':
-        core.average()
 
     # bad command
     else:

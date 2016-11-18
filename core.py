@@ -274,20 +274,3 @@ def order():
         print(n3, "<", n1, "<", n2)
     if n3 < n2 < n1:
         print(n3, "<", n2, "<", n1)
-
-
-def average():
-    print("How many numbers?")
-    numbers = int(input(">> "))
-    if numbers == 1:
-        print("Invalid input.")
-    elif numbers == 0:
-        print("Invalid input.")
-    else:
-        for i in range(0, numbers):
-            n = int(input("n = "))
-            part1 = (n + n)
-            i += 1
-            if i == numbers:
-                part2 = part1 / numbers
-                print(part2)
