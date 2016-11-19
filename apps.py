@@ -11,7 +11,7 @@
 
 # Template for addition to masonCLI:
 #
-# if (command == 'example'):
+# elif command == 'example':
 #   apps.example()
 
 

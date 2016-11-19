@@ -24,7 +24,7 @@ def assist():
     print("'root' will find the x root of a number.")
     print("'factorial' will find the factorial of a number.")
     print("'splitwork' will solve a split-work problem.")
-    print("'order' will ask for three inputs and print them in order from least to greatest.")
+    print("'order' will ask for three inputs and print them in order.")
     print("'average' will find the average of an amount of numbers.\n")
 
 
@@ -33,7 +33,8 @@ def assist_sys():
     print("'help' shows this help.")
     print("'info' shows license info for masonCLI.")
     print("'echo' returns input.")
-    print("'prompt' will change the prompt for the current session.\n")
+    print("'prompt' will change the prompt for the current session.")
+    print("Running the update file will create another directory for unstable releases.\n")
 
 
 def assist_geom():
