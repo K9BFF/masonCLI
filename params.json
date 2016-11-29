@@ -1,6 +1,6 @@
 {
   "name": "masonCLI",
   "tagline": "A simple math-oriented CLI",
-  "body": "# masonCLI\r\nmasonCLI is made for math. It is a command-line interface that does math easily and simply.\r\n\r\nThis program is created, programmed, and maintained by a High School Sophomore, so it cannot do calculus-level math.\r\n![The first prompt](http://i.imgur.com/Ce2MwrE.png)\r\n\r\nHere's an example of masonCLI in action.\r\n![Finding the 6th root of 240.](http://i.imgur.com/LjQSkyk.png)\r\n",
+  "body": "# masonCLI\r\nmasonCLI is made for math. It is a command-line interface that does math easily and simply.\r\n\r\nThis program is created, programmed, and maintained by a High School Sophomore, so it cannot do calculus-level math.\r\n![The first prompt](http://i.imgur.com/vIksAlC.png)\r\n\r\nHere's an example of masonCLI in action.\r\n![ratios](http://i.imgur.com/kjtqMIi.png)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
