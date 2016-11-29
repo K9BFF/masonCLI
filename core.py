@@ -276,26 +276,3 @@ def order():
         print(n3, "<", n1, "<", n2)
     if n3 < n2 < n1:
         print(n3, "<", n2, "<", n1)
-
-
-def ratio():
-    print("Is it a (simple) ratio or (extended) ratio?")
-    kind = input(">> ").lower()
-    if kind == "simple":
-        print("WIP")
-    elif kind == "extended":
-        n1 = float(input("n1 = "))
-        n2 = float(input("n2 = "))
-        n3 = float(input("n3 = "))
-        n4 = (n1 + n2 + n3)
-        print(n1 + n2 + n3 " = ")
-        n5 = float(input(">> "))
-        n6 = (n5 / n4)
-        print("x =", n6)
-        if n5 == 180:
-            print("Angle measures are:")
-            print(n1 * n6, "Degrees")
-            print(n2 * n6, "Degrees")
-            print(n3 * n6, "Degrees")
-    else:
-        print("Invalid input.")
