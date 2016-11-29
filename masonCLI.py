@@ -1,7 +1,7 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 3.0
+# v 3.1
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,7 +10,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "3.0"
+version = "3.1"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
@@ -107,6 +107,10 @@ while running:
     # print in order
     elif command == 'order':
         core.order()
+
+    # ratios
+    elif command == 'ratio':
+        core.ratio()
 
     # bad command
     else:

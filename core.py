@@ -276,3 +276,18 @@ def order():
         print(n3, "<", n1, "<", n2)
     if n3 < n2 < n1:
         print(n3, "<", n2, "<", n1)
+
+
+def ratio():
+    n1 = float(input("n1 = "))
+    n2 = float(input("n2 = "))
+    n3 = float(input("n3 = "))
+    n4 = (n1 + n2 + n3)
+    xthing = str(n4)
+    print(xthing+"x = ")
+    n5 = float(input(">> "))
+    n6 = (n5 / n4)
+    print("x =", n6)
+    print("n1 =", n1 * n6)
+    print("n2 =", n2 * n6)
+    print("n3 =", n3 * n6)
