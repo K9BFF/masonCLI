@@ -26,7 +26,7 @@ def assist():
     print("'factorial' will find the factorial of a number.")
     print("'splitwork' will solve a split-work problem.")
     print("'order' will ask for three inputs and print them in order.")
-    print("'ratio' will find simple and extended ratios.")
+    print("'ratio' will find extended ratios.")
 
 
 def assist_sys():
