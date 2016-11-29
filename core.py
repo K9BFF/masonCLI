@@ -16,7 +16,8 @@ def echo():
 def assist():
     print("\nmasonCLI is a math-oriented command-line interface.")
     print("> is a command prompt.")
-    print(">> is an input prompt.\n")
+    print(">> is an input prompt.")
+    print("Words in parenthesis show options that can be used.\n")
     print("'help -sys' shows system commands.")
     print("'help -geom' shows geometry commands.\n")
     print("'math' does simple math. (Add, Subtract, Divide, Multiply, Modulus, Exponents.)")
@@ -25,7 +26,7 @@ def assist():
     print("'factorial' will find the factorial of a number.")
     print("'splitwork' will solve a split-work problem.")
     print("'order' will ask for three inputs and print them in order.")
-    print("'average' will find the average of an amount of numbers.\n")
+    print("'ratio' will find simple and extended ratios.")
 
 
 def assist_sys():
@@ -204,8 +205,8 @@ def factorial():
 
 
 def splitwork():
-    print("Solve for time, or n1?")
-    solve = input(">> ")
+    print("Solve for (time), or (n1)?")
+    solve = input(">> ").lower()
     if solve == 'time':
         n1 = float(input("n1 = "))
         n2 = float(input("n2 = "))
@@ -275,3 +276,26 @@ def order():
         print(n3, "<", n1, "<", n2)
     if n3 < n2 < n1:
         print(n3, "<", n2, "<", n1)
+
+
+def ratio():
+    print("Is it a (simple) ratio or (extended) ratio?")
+    kind = input(">> ").lower()
+    if kind == "simple":
+        print("WIP")
+    elif kind == "extended":
+        n1 = float(input("n1 = "))
+        n2 = float(input("n2 = "))
+        n3 = float(input("n3 = "))
+        n4 = (n1 + n2 + n3)
+        print(n1 + n2 + n3 " = ")
+        n5 = float(input(">> "))
+        n6 = (n5 / n4)
+        print("x =", n6)
+        if n5 == 180:
+            print("Angle measures are:")
+            print(n1 * n6, "Degrees")
+            print(n2 * n6, "Degrees")
+            print(n3 * n6, "Degrees")
+    else:
+        print("Invalid input.")
