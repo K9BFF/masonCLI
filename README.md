@@ -1,5 +1,5 @@
 # masonCLI
-![Build Status](https://travis-ci.org/masoncodes/masonCLI.svg?branch=master)
+![Build Status](https://travis-ci.org/masoncodes/masonCLI.svg?branch=master) ![License](https://img.shields.io/badge/license-apache-blue.svg)
 
 
 masonCLI is made for math. It is a command-line interface that does math easily and simply.
