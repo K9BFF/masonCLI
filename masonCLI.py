@@ -10,7 +10,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "3.1"
+version = "3.2"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
@@ -111,6 +111,14 @@ while running:
     # ratios
     elif command == 'ratio':
         core.ratio()
+
+    # trig
+    elif command == 'trig':
+        core.trig()
+
+    # ivnerse trig
+    elif command == 'invtrig':
+        core.invtrig()
 
     # bad command
     else:

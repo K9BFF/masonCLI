@@ -291,3 +291,41 @@ def ratio():
     print("n1 =", n1 * n6)
     print("n2 =", n2 * n6)
     print("n3 =", n3 * n6)
+
+
+def trig():
+    print("Find (sin), (cos), or (tan)?")
+    kind = input(">> ").lower()
+    if kind == 'sin':
+        n1 = float(input("n1 = "))
+        n1 = math.sin(n1)
+        print(n1)
+    elif kind == 'cos':
+        n1 = float(input("n1 = "))
+        n1 = math.cos(n1)
+        print(n1)
+    elif kind == 'tan':
+        n1 = float(input("n1 = "))
+        n1 = math.tan(n1)
+        print(n1)
+    else:
+        print("Invalid Input")
+
+
+def invtrig():
+    print("Find inverse of (sin), (cos), or (tan)?")
+    kind == input(">> ").lower()
+    if kind == 'sin':
+        n1 = float(input("n1 = "))
+        n1 = math.asin(n1)
+        print(n1)
+    elif kind == 'cos':
+        n1 = float(input("n1 = "))
+        n1 = math.acos(n1)
+        print(n1)
+    elif kind == 'tan':
+        n1 = float(input("n1 = "))
+        n1 = math.atan(n1)
+        print(n1)
+    else:
+        print("Invalid Input.")
