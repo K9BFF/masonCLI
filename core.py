@@ -45,7 +45,9 @@ def assist_geom():
     print("'missingangle' will solve for a missing angle.")
     print("'trifind' will find the missing angle of a triangle.")
     print("'midpoint' will find the midpoint of two points.")
-    print("'distance will find the distance between two points.\n")
+    print("'distance will find the distance between two points.")
+    print("'trig' will find the sine, cosine, or tangent of a number.")
+    print("'invtrig' will fin the inverse sine, cosine, or tangent of a number.")
 
 
 def climath():
