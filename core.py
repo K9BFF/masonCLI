@@ -331,3 +331,11 @@ def invtrig():
         print(n1)
     else:
         print("Invalid Input.")
+
+
+def thermochem():
+    m = float(input("m = "))
+    c = float(input("c = "))
+    t = float(input("t = "))
+    q = m*c*t
+    print(q, "Joules")

@@ -1,7 +1,6 @@
 # licensed under the Apache License 2.0
 # github.com/masoncodes
 # masoncodes.me
-# v 3.1
 # for core code, see core.py
 # to add custom code in a safe way, see apps.py
 
@@ -10,7 +9,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "3.2.1"
+version = "3.3"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
@@ -116,9 +115,13 @@ while running:
     elif command == 'trig':
         core.trig()
 
-    # ivnerse trig
+    # inverse trig
     elif command == 'invtrig':
         core.invtrig()
+
+    # thermochem
+    elif command == 'thermochem':
+        core.thermochem()
 
     # bad command
     else:
