@@ -338,4 +338,6 @@ def thermochem():
     c = float(input("c = "))
     t = float(input("t = "))
     q = m*c*t
-    print(q, "Joules")
+    kcal = q * 0.000239006
+    print("%.4f" % q, "Joules")
+    print("%.4f" % kcal, "Kilocalories")
