@@ -9,7 +9,7 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "3.3"
+version = "3.3.1"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
