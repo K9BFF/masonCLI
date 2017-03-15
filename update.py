@@ -13,10 +13,10 @@ print("Unless you have Git installed on your computer,\n"
       "https://github.com/masoncodes/masonCLI\n"
       "to download the newest version.")
 print("Is git installed on this computer? (y/n)")
-ask = input(">> ")
+ask = input(">> ").lower()
 if ask == "y":
     print("Is masonCLI already installed on this computer (from github?) (y/n)")
-    ask2 = input(">> ")
+    ask2 = input(">> ").lower()
     if ask2 == "y":
         print("Where is the installation located?")
         path2 = input(">> ")
@@ -24,7 +24,7 @@ if ask == "y":
         os.system("git pull")
         print("Pull complete.")
         input("Press [Enter] to finish. ")
-    if ask2 == "n":
+    elif ask2 == "n":
         print("Please specify a path for future versions of masonCLI.")
         path = input(">> ")
         if os.path.exists(path):
@@ -39,6 +39,8 @@ if ask == "y":
             os.system("git clone https://github.com/masoncodes/masonCLI")
             print("masonCLI has been updated.")
             input("Press [Enter] to finish. ")
+    else:
+        print("Invalid Input.")
 elif ask == "n":
     print("Please use github to download the latest version of\n"
           "masonCLI.")

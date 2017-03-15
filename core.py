@@ -27,6 +27,7 @@ def assist():
     print("'splitwork' will solve a split-work problem.")
     print("'order' will ask for three inputs and print them in order.")
     print("'ratio' will find extended ratios.")
+    print("'thermochem' will perform thermochemistry.\n")
 
 
 def assist_sys():
@@ -88,7 +89,6 @@ def climath():
 
 
 def info():
-    print("A Python CLI.")
     print("Copyright 2016 masoncodes")
     print("\n"
           "Licensed under the Apache License, Version 2.0 (the \"License\");\n"
