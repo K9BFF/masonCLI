@@ -9,11 +9,11 @@ import core
 import apps
 
 # version CHANGE THIS
-version = "3.3.1"
+version = "3.4"
 
 print("masonCLI v" + version + ". Type 'help' for a list of commands.")
 
-running = True  # wanna hear my longest yeah boi ever?
+running = True  # it do be running
 
 prompt = ">"
 
@@ -122,6 +122,10 @@ while running:
     # thermochem
     elif command == 'thermochem':
         core.thermochem()
+
+    # logs and natural logs
+    elif command == 'log':
+        core.log()
 
     # bad command
     else:

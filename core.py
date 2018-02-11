@@ -28,6 +28,7 @@ def assist():
     print("'order' will ask for three inputs and print them in order.")
     print("'ratio' will find extended ratios.")
     print("'thermochem' will perform thermochemistry.\n")
+    print("'log' will perform logarithms.")
 
 
 def assist_sys():
@@ -89,7 +90,7 @@ def climath():
 
 
 def info():
-    print("Copyright 2016 masoncodes")
+    print("Copyright 2018 masoncodes")
     print("\n"
           "Licensed under the Apache License, Version 2.0 (the \"License\");\n"
           "you may not use this file except in compliance with the License.\n"
@@ -315,6 +316,7 @@ def trig():
 
 
 def invtrig():
+    kind = ""    # fixing error in pycharm, move along...
     print("Find inverse of (sin), (cos), or (tan)?")
     kind == input(">> ").lower()
     if kind == 'sin':
@@ -341,3 +343,14 @@ def thermochem():
     kcal = q * 0.000239006
     print("%.4f" % q, "Joules")
     print("%.4f" % kcal, "Kilocalories")
+
+
+def log():
+    print("For natural logs, input 'e' for base.")
+    base = input("base = ")
+    x = float(input("arg = "))
+    if base == 'e':
+        base = 2.7182818284590452353602874713527
+    else:
+        base = float(base)
+    print("%.3f" % math.log(x, base))
